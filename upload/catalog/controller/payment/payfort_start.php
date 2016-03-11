@@ -94,7 +94,7 @@ class ControllerPaymentPayfortStart extends Controller {
         $userAgent = 'Opencart ' . VERSION . ' / Start Plugin ' . $this->version;
 
         Start::setUserAgent($userAgent);
-        Start::setApiKey($start_payments_secret_api);
+        Start::setApiKey($payfort_start_secret_api);
         $json = array();
         try {
               $charge_args = array(
